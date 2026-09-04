@@ -18,11 +18,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1806218033835645');
+    fbq('init', '4605003949728665');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1806218033835645&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=4605003949728665&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
@@ -216,7 +216,7 @@
         
         <!-- TOP PROFILE IMAGE -->
         <div class="profile-img-container">
-            <img src="Https://www.image2url.com/r2/default/images/1785727832776-0d17e62b-4f27-4046-89de-299e185891df.jpg" alt="Profile Image" class="profile-img">
+            <img src="https://www.image2url.com/r2/default/images/1785727832776-0d17e62b-4f27-4046-89de-299e185891df.jpg" alt="Profile Image" class="profile-img">
         </div>
 
         <!-- MAIN ACTION BUTTON WITH TRACKING ID -->
@@ -243,21 +243,21 @@
 
     </div>
 
-    <!-- JAVASCRIPT FOR EVENT TRACKING (SUBSCRIBE) & ANTI-BOT REDIRECT -->
+    <!-- JAVASCRIPT FOR EVENT TRACKING (SUBSCRIBE) & REDIRECT -->
     <script>
         document.getElementById('join-telegram-btn').addEventListener('click', function(e) {
             
-            // FAKE CLICK PROTECTION: Block bots/scripts, only allow human clicks
+            // FAKE CLICK PROTECTION: Sirf genuine user clicks allow honge
             if (!e.isTrusted) return; 
 
-            e.preventDefault(); // Stop default action immediately
+            e.preventDefault(); 
             
-            // 1. Fire the Subscribe Event to Meta Pixel
+            // 1. Fire Subscribe Event for Engagement Ads
             if (typeof fbq === 'function') {
                 fbq('track', 'Subscribe');
             }
             
-            // 2. 400ms delay to ensure 100% Pixel delivery before jumping to Telegram app
+            // 2. 400ms delay for reliable pixel packet delivery before app redirect
             setTimeout(function() {
                 window.location.href = 'https://t.me/+o64r4lUwS6JkNGZl';
             }, 400);
